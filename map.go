@@ -18,4 +18,15 @@ func main() {
 	fmt.Println(person["age"])
 	fmt.Println(person["city"])
 	fmt.Println(person)
+
+	book := make(map[string]string)
+	book["title"] = "Go Programming"
+	book["author"] = "John Doe"
+	book["publisher"] = "Tech Books Publishing"
+
+	fmt.Println(book)
+
+	delete(book, "publisher")
+
+	fmt.Println(book)
 }
