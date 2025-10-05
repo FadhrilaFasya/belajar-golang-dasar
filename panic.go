@@ -4,6 +4,10 @@ import "fmt"
 
 func endApp() {
 	fmt.Println("Aplikasi selesai")
+	panicErr := recover()
+	if panicErr != nil {
+		fmt.Println("Terjadi error:", panicErr)
+	}
 }
 
 func runApp(error bool) {
@@ -16,4 +20,5 @@ func runApp(error bool) {
 
 func main() {
 	runApp(true)
+	fmt.Println("Aplikasi tetap berjalan")
 }
