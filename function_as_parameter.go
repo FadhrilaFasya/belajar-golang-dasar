@@ -17,4 +17,8 @@ func spamFilter(name string) string {
 func main() {
 	sayHelloWithFilter("John", spamFilter)
 	sayHelloWithFilter("anjing", spamFilter)
+
+	filter := spamFilter
+	sayHelloWithFilter("Doe", filter)
+	sayHelloWithFilter("anjing", filter)
 }
