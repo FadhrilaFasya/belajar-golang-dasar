@@ -14,4 +14,7 @@ func main() {
 	cust.Address = "Subang"
 	cust.Age = 30
 	fmt.Println(cust)
+	fmt.Println(cust.Name)
+	fmt.Println(cust.Address)
+	fmt.Println(cust.Age)
 }
