@@ -13,4 +13,8 @@ func sumAll(numbers ...int) int {
 func main() {
 	total := sumAll(10, 20, 30, 40, 50)
 	fmt.Println("Total:", total)
+
+	numbers := []int{1, 2, 3, 4, 5}
+	total = sumAll(numbers...)
+	fmt.Println("Total from slice:", total)
 }
