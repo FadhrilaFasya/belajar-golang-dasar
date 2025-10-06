@@ -27,7 +27,7 @@ func main() {
 		City:     "Malang",
 		Province: "Jawa Timur",
 		Country:  "Indonesia",
-	}
+	} // Mengubah value address1 melalui dereference address2 (pointer address2
 	fmt.Println("Address 1:", address1)
 	fmt.Println("Address 2:", address2)
 }
