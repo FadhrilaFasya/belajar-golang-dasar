@@ -18,12 +18,12 @@ func main() {
 	// fmt.Println("Address 1:", address1) // This will still show Jakarta
 	// fmt.Println("Address 2:", address2) // This will show Bandung
 
-	var address1 = Address{
+	var address1 Address = Address{
 		City:     "Jakarta",
 		Province: "DKI Jakarta",
 		Country:  "Indonesia",
 	}
-	var address2 = &address1 // Using a pointer to address1
+	var address2 *Address = &address1 // Using a pointer to address1
 
 	address2.City = "Bandung" // Changing the city through the pointer address2
 	fmt.Println("Address 1:", address1) // This will still show Jakarta
