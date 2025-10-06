@@ -18,7 +18,12 @@ func main() {
 	fmt.Println("Address 1:", address1)
 	fmt.Println("Address 2:", address2)
 
-	address2 = &Address{
+	// address2 = &Address{
+	// 	City:     "Malang",
+	// 	Province: "Jawa Timur",
+	// 	Country:  "Indonesia",
+	// }
+	*address2 = Address{
 		City:     "Malang",
 		Province: "Jawa Timur",
 		Country:  "Indonesia",
