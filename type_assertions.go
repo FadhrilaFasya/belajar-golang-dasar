@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func random() interface{} {
-	return new
+	return "OK"
 }
 
 func main() {
